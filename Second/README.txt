@@ -1,0 +1,6 @@
+Based on code above, we can notice that 3 checks are done on "if" statement but no iteration should occur. Since it was built using the "or" logic, this check is also optimazed to make it been accessed as soon as possible and all the first scenarios to confirm the 2 entries are candidates to be Partial Permutations based on rules described previously. It should have a constant value (lets call it "b").
+After the first checks, we should iterate the Strings to calculate how much misspelled characters they have beetween them. Since the loop will iterate exactly the String length received as entry (lets call its length as "n"), it has complexity "n".
+To confirm the 2 entries provided respect the last rule to guarantee they are Partial Permutation of each other, we should confirm if the amount of misspelled characters is better than the threshold defined by the question. This check also take a constant (lets call it "c"). 
+Taking the considerations listed previously, the code should have complexity of "b + c + n". 
+
+Since "b" and "c" are constants, the complexity of this method is O(n).
